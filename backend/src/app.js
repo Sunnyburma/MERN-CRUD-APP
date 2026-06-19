@@ -8,8 +8,9 @@ import recordRoutes from './routes/recordRoutes.js';
 
 const app = express();
 
-const allowedOrigins = (process.env.CLIENT_URL || 'http://mern-crud-app-frontend-eight.vercel.app') 
 //http://localhost:5173
+
+const allowedOrigins = (process.env.CLIENT_URL || 'http://mern-crud-app-frontend-eight.vercel.app') 
   .split(',')
   .map((origin) => origin.trim());
 
